@@ -71,7 +71,7 @@ function getRandomNumber() {
   document.addEventListener('DOMContentLoaded', function() {
     const initialSpeech = getRandomSpeech();
     displaySpeech(initialSpeech); // Display initial speech when popup is opened initially
-    
+      setInterval(getAndDisplaySpeech, 120000);
     document.getElementById('getSpeech').addEventListener('click', function() {
       const newSpeech = getRandomSpeech();
       displaySpeech(newSpeech);
